@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilocad.css">
+    <title>Cadastro</title>
+       
+    <!--metodo para selecionar opção de cadastro -->
+    <script>
+        function mostrarFormulario() {
+            var tipo = document.getElementById("tipoUsuario").value;
+            if (tipo == "cliente") {
+                document.getElementById("formCliente").style.display = "block";
+                document.getElementById("formFuncionario").style.display = "none";
+            } else if (tipo == "funcionario") {
+                document.getElementById("formFuncionario").style.display = "block";
+                document.getElementById("formCliente").style.display = "none";
+            }
+        }
+    </script>
+
+</head>
+<body>
+   
+    
+    
+    <form method="POST" action="processar_cadastro.php">
+        
+        <h2>Cadastro</h2>
+        
+        <label for="tipoUsuario">Selecione seu tipo:</label>
+        <select id="tipoUsuario" name="tipoUsuario" onchange="mostrarFormulario()">
+            <option value="">Escolha</option>
+            <option value="cliente">Cliente</option>
+            <option value="funcionario">médico</option>
+        </select>
+
+        <!-- Formulário Cliente -->
+        <div id="formCliente" style="display:none;">
+            <h3>Cadastro Cliente</h3>
+            <label for="nomeCliente">Nome:</label>
+            <input type="text" id="nomeCliente" name="nomeCliente" required><br><br>
+            
+            <label for="emailCliente">Email:</label>
+            <input type="email" id="emailCliente" name="emailCliente" required><br><br>
+            
+            <label for="telefoneCliente">Telefone:</label>
+            <input type="tel" id="telefoneCliente" name="telefoneCliente" required><br><br>
+
+            <label for="localidade">localidade:</label>
+            <input type="text" name="local" id="local" required placeholder="digite seu endereço completo aqui!">
+            
+        </div>
+
+        <!-- Formulário Funcionário -->
+        <div id="formFuncionario" style="display:none;">
+            <h3>Cadastro médico</h3>
+            <label for="medico">Nome:</label>
+            <input type="text" id="medico" name="medico" required><br><br>
+            
+            <label for="crm">numeração do CRM:</label>
+            <input type="number" name="crm" id="crm" required><br><br>
+
+            <label for="area">area de atuação </label>
+            <input type="text" name="area" id="area" required><br><br>
+        </div>
+
+        <input type="submit" value="Cadastrar">
+    </form>
+    
+</body>
+</html>

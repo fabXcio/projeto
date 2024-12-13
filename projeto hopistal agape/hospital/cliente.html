@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estiloweb.css">
+    <title>Agendamento de Consulta</title>
+</head>
+<body>
+    <header class="cabeça">
+        <nav>
+            <a href="cliente_dashboard.php">Voltar ao painel</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="agendamento-container">
+            <h2>Agendamento de Consulta</h2>
+            <form action="agendar_consulta.php" method="POST">
+                <div class="form-group">
+                    <label for="medico">Selecione o médico:</label>
+                    <select name="medico" id="medico" required>
+                        <option value="medico1">Dr. João Silva - Cardiologista</option>
+                        <option value="medico2">Dra. Maria Oliveira - Dermatologista</option>
+                        <option value="medico3">Dr. Pedro Souza - Clínico Geral</option>
+                        <!-- Adicione mais médicos conforme necessário -->
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="data">Selecione a data:</label>
+                    <input type="date" name="data" id="data" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="hora">Selecione o horário:</label>
+                    <input type="time" name="hora" id="hora" required>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit">Agendar Consulta</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Hospital Ágape. Todos os direitos reservados.</p>
+            <p>Seguindo sempre os mais altos padrões de ética e cuidados médicos.</p>
+        </div>
+    </footer>
+</body>
+</html>

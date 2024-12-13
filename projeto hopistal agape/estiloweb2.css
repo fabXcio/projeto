@@ -1,0 +1,183 @@
+/* Geral */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+h3, h4 {
+  color: #333;
+}
+
+/* Header */
+.cabeça {
+  background-color: #1e3c72;
+  color: white;
+  padding: 10px 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul img {
+  margin-right: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav a:hover {
+  color: #f2b632;
+}
+
+/* Secção "Sobre" */
+#sobre {
+  text-align: center;
+  padding: 50px 20px;
+  flex-direction:row;
+  display: flex;
+  margin-left: 200px;
+  padding-left: 30px;
+
+}
+
+.textoSobre {
+  max-width: 800px;
+  margin: 20px auto;
+  line-height: 1.6;
+}
+
+/* Secção "Serviços" */
+#serviços {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 20px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  width: 30%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card h4 {
+  color: #1e3c72;
+}
+
+.card p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Secção "Médicos" */
+#medicos {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 20px;
+  flex-wrap: wrap;
+}
+
+.medico-card {
+  background-color: #fff;
+  width: 30%;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.medico-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.medico-card h4 {
+  margin: 20px 0 10px;
+}
+
+.medico-card p {
+  color: #555;
+}
+
+/* Secção "Feedback" */
+#feedback {
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+.form-container {
+  width: 50%;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  color: #333;
+}
+
+input, textarea {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #1e3c72;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #f2b632;
+}
+
+.SAC {
+  margin-left: 50px;
+  max-width: 300px;
+  background-color: #2f2dc0;
+  margin-top: 100px;
+  height: 200px;
+}
+
+/* Footer */
+footer {
+  background-color: #1e3c72;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content p {
+  margin: 5px 0;
+}

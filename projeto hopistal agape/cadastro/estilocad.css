@@ -1,0 +1,97 @@
+/* Estilo para o body e página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container principal */
+form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Título */
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Subtítulo dos formulários */
+h3 {
+    color: #333;
+}
+
+/* Estilo do select (dropdown) */
+select {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Estilo dos inputs de texto */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"] {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Estilo do botão de submit */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 95%;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Div de cada formulário */
+div {
+    display: none;
+    margin-bottom: 20px;
+}
+
+/* Apresentação dos formulários ao selecionar o tipo de usuário */
+#formCliente,
+#formFuncionario {
+    display: block;
+}
+
+/* Estilos para os labels */
+label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Espaçamento entre as seções do formulário */
+br {
+    margin-bottom: 10px;
+}
